@@ -1,0 +1,31 @@
+### 001. JVM(Java Virtual Machine)
+	-자바가상머신으로 자바바이트코드를 실행할 수 있는 주체
+	-바이트코드를 해당운영체제가 이해할 수 있는 기계어로 바꿔 실행시켜준느 역할
+	
+	[java파일] A.java
+			|----------------------- javac A.java
+	[class파일] A.class
+			|----------------------- java A
+			
+	Java의 모토인 Write once, Run anywhere는 JVM을 통해 가능
+	
+### 002. JVM의 구성
+https://namu.wiki/w/%EC%9E%90%EB%B0%94%20%EA%B0%80%EC%83%81%20%EB%A8%B8%EC%8B%A0?from=Java%20Virtual%20Machine
+----------------------------------------------------
+	[java파일] A.java
+			|----------------------- javac A.java
+	[class파일] A.class
+			|----------------------- java A
+----------------------------------------------------
+	[Class Loader]		[Execution Engine]	[Garbage Collector]
+	↕						↕						↕
+	___________________________________________________________
+	[Runtime Data Area]
+	___________________________________________________________
+1. Class Loader : .class(바이트코드)파일들을 엮어서 JVM인 운영체제로 할당받은 메모리 영역이
+					[Runtime Data Area]에 적재하는 역할
+2. Execution Engine : 적재된 .class(바이트코드)파일들을 기계어로 변경해 명령어 단위로 실행하는 역할
+3. Garbage collector : Heap 메모리영역에 생성된 객체들 중에 참조되지 않은 객체들을 탐색 후 제거
+4. Runtime Data Area : Method area(static 저장공간), heap(new 연산자), stack area(지역변수 저장공간), pc register(쓰레드 연관), native method stack
+
+
