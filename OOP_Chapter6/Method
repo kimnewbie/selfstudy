@@ -1,0 +1,49 @@
+	[메서드의 흐름]
+	
+	(1) main 메서드에서 메서드 add를 호출한다. 인수 1L과 2L이 메서드 add의 매개 변수 a,b에
+		각각 복사(대입)된다.
+	(2) 메서드 add의 괄호{}안에 있는 문장들이 순서대로 수행된다.
+	(3) 메서드 add의 모든 문장이 실행되거나 return문을 만나면, 호출한 메서드(main 메서드)로
+		되돌아와서 이후의 문장들이 실행된다.
+		
+	MyMath mm = new MyMath(); (1)객체생성
+	
+	long value = mm.add(1L, 2L); (2)메서드 호출
+	
+	long add(long a, long b_{
+		long result = a+b;
+		return result;
+	}
+	
+	
+	[return문]
+	반환타입이 void가 아닌 경우, 반드시 return문이 필요.
+	
+	int max(int a, int b){
+		if(a>b)
+			return a;
+	}---------------------------> Error 조건식이 거짓인 경우도 생성해야함
+	
+	int max(int a, int b){
+		if(a>b)
+			return a;
+		else
+			return b;
+	}
+	
+	
+	[static 메서드와 인스턴스 메서드]
+	1. 인스턴스 메서드
+		- 인스턴스 생성 후, '참조변수.메서드이름()'으로 호출
+		- 인스턴스 멤버(iv,im)와 관련된 작업을 하는 메서드
+		- 메서드 내에서 인스턴스 변수(iv) 사용 가능
+		
+	2. static 메서드(클래스 메서드)
+		- 객체생성없이 '클래스이름.메서드이름()'으로 호출  
+			ex) Math.random(), Math.round()
+		- 인스턴스 멤버(iv, im)와 관련없는 작업을 하는 메서드
+		- 메서드 내에서 인스턴스 변수(iv) 사용불가
+		
+	*** 객체는 iv의 묶음!
+		인스턴스는 가지고 있지만
+		클래스는 가지고 있지 않아	***
