@@ -1,0 +1,16 @@
+	[001] 상속
+	
+	1. 개요
+		- 클래스의 재사용
+			기존클래스를 물려받아 [새로운 부분만 추가]하거나 [수정]하려고 만든 개념
+			부모클래스(parent class) - 상위클래스(super class)
+			자식클래스(child class) - 하위클래스(sub class)
+			
+		- 상위클래스(super class)를 재 사용하여 새로운 클래스를 작성하는 것
+		- 모든 클래스 Object 클래스를 상속받음
+		- 자바 클래스의 상속은 단일 상속
+		- 다중상속을 지원하지 않음 => 인터페이스를 이용해서 사용 가능
+	2. 상속의 형식
+		class 자식클래스 extends 부모클래스
+		class Note9 extends Note8
+		class Note10 extends A,B{} (X)
