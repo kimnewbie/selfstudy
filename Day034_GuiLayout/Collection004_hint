@@ -1,0 +1,13 @@
+	Collection004
+	
+	M : Vector
+	V : CollectionGui - 화면과 같이 구현 - 이벤트 연결 안함
+	C : Collection_Using{
+		멤버변수  : Vector/ CollectionGui
+		}
+	
+	[본인이름c1] CollectionGui	- view 따라 똑같이 만들고
+	[본인이름c12] Collection_Using - add (추가기능)
+	[본인이름c123] Collection_Using - showAll (전체메뉴 확인기능)
+	[본인이름c1234] Collection_Using - get (번호주면 해당데이터 확인기능)
+	[본인이름c12345] Collection_Using - remove(번호주면 해당데이터 삭제기능)
