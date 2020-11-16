@@ -1,0 +1,5 @@
+	List	: 순서(O), 중복허용(O)	- add, get, size, remove
+	Set		: 순서(X), 중복허용(X)	- add, get(X:Iterator), size, remove
+	Map		: (key, value)		- add(X: put), get(key), size, remove
+				두껍아 두껍아 헌집줄게 새집다오
+				맵아	 맵아	  키줄게	value다오	
